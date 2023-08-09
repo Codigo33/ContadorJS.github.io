@@ -1,1 +1,1 @@
-# ContadorJS.github.io
+# Counter numbers with JavaScript
