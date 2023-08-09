@@ -1,0 +1,91 @@
+/* Custom Properties */
+:root {
+    --negro: #000;
+    --blanco: #fff;
+    --grisClaro: #E1FAF9;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    /* Tamaño fuente = 10px */
+    font-size: 62.5%;
+    /* Familia por defecto */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    /* 1rem = 10px */
+    font-size: 16px;
+    background-color: var(--grisClaro);
+    margin: 0;
+}
+
+ul, ol, li {
+    /* Quita viñetas */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+a {
+    /* Quita underline */
+    text-decoration: none;
+}
+p {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+
+/* Tipografia */
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container span {
+    font-size: 10rem;
+    margin: 1.5rem 0;
+}
+
+
+/* Button */
+.btn {
+    background-color: transparent;
+    padding: 5px 2rem;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 7px;
+    border: 3px solid var(--negro);
+    cursor: pointer;
+    box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
